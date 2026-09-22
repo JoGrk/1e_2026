@@ -29,4 +29,4 @@ print("Program przelicza bity na bajty.")
 
 b = int(input("Podaj bity: "))
 
-print("Bajty: ",b/8)
+print(f"Bajty: {b/8}")
