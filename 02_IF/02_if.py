@@ -33,7 +33,7 @@
 # * upewnij się, że dzień odpowiada wybranemu miesiącu: tzn. dla stycznia <=31, dla lutego <=29, dla marca <=31 itd.
 
 # 3. Wczytaj zmienną całkowitą a, upewnij się, że jest:
-a = int(input('Podaj liczbe: '))
+#a = int(input('Podaj liczbe: '))
 # A. dodatnią liczbą parzystą
 # if a % 2 == 0 and a > 0:
 #     print('Jest parzysta i jest większa od zera')
@@ -46,18 +46,46 @@ a = int(input('Podaj liczbe: '))
 #     print("Warunek nie zostal spełniony.")
 
 # C. mniejsza od -10, większa od 10 lub równa zero
-if a < -10 or a > 10 or a == 0 :
-    print("warunek jest spełniony")
+# if a < -10 or a > 10 or a == 0 :
+#     print("warunek jest spełniony")
 
 
 # D. należy do przedziału (1,100>, ale jest różna od 10 i różna od 20
-if a > 1 and a <= 100 and a != 10 and a != 20:
-    print("warunek jest spełniony")
+# if a > 1 and a <= 100 and a != 10 and a != 20:
+#     print("warunek jest spełniony")
 # 4. Wczyta znak. Upewni się, że jest on:
 
 # A. wielką literą
 
 # B. cyfrą
+
+# C. małą lub wielką literą
+
+# D. 't', 'T', 'n' lub 'N'
+
+# a = input("podaj znak: ")
+# if len(a) == 1 and a >= "A" and a <= "Z":
+#     print("litera jest wielka")
+# else:
+#     print("litera jest mała")
+
+# if len(a) == 1:
+#     if a >= 'A' and a <= 'Z':
+#         print('Litera jest wielka')
+#     else: 
+#         print('Litera jest mała')
+# else:
+#     print('Nie jest to znak')
+
+# B. cyfrą
+if len(a) == 1:
+    if a >= "0" and a <= "9":
+        print("cyfra")
+    else:
+        print("nie jest cyfrom")
+else:
+    print("to nie jest znak")
+
 
 # C. małą lub wielką literą
 
