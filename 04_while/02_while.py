@@ -26,18 +26,36 @@ a = 12
 #     print(a, end=", ")
 #     a += 5
 # 1024   512   256   128 .... większe od 1
-a = 1024
-while a > 1 :
-    print(a, end=", ")
-    a /= 2
-# -----------------------------
-print (3)
+
+# a = 1024
+# while a > 1 :
+#     print(a, end=", ")
+#     a /= 2
+
+# # -----------------------------
+# print (3)
 # 3. Napisz program, który wczyta ciąg liczb zakończony zerem, a następnie wypisze największą z tych liczb 
+
 x = int(input("liczba :"))
+max = x
 while x != 0:
-    print(x)
-    x = int(input("liczba:"))
+   if max < x: 
+       max = x
+   x = int(input("liczba:"))
+   
+
+print(x)
+
 # 4. Napisz program, który wczyta ciąg liczb zakończony zerem, a następnie wypisze sumę z tych liczb 
+
+# x = int(input("liczba :"))
+# sum = 0
+
+# while x != 0:
+#     sum = sum + x  # sum += x
+#     x = int(input("liczba:"))
+
+# print(sum)
 
 # 5. Wypisz wszystkie wyrazy ciągu 1 1 2 3 5 8 13 21 ... mniejsze od 1000
 
