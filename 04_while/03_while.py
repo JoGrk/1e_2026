@@ -17,8 +17,8 @@
 
 # 2. Wykonujemy kolejne zadania z naszej i liczymy je. Przygotuj:
 
-# A. funkcję liczba_pomiarów(), która wczytuje kolejne zadanie (tekst) aż do podania wartości 0 i zwraca liczbę wykonanych pomiarów.
-# B. funkcję main(), która wyświetla liczbę pomiarów zwróconą przez funkcję
+# A. funkcję liczba_zadan(), która wczytuje kolejne zadanie (tekst) aż do podania wartości koniec  i zwraca liczbę wykonanych zadań.
+# B. funkcję main(), która wyświetla liczbę zadań zwróconą przez funkcję
 
 
 def liczba_pomiarow():
