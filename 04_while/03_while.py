@@ -45,18 +45,47 @@ main()
 # B. funkcja main(), która wyświetla średnią pomiarów
 
 
+def srednie_pomiarow():
+    pomiar = int(input("podaj pomiar : "))
+    suma = 0
+    liczenie = 0
+    while pomiar != -1:
+        suma += pomiar
+        liczenie += 1
+        pomiar = int(input("podaj pomiar : "))
+    return suma / liczenie
 
+def main():
+    print("Oblicza srednia pomiarow")
+    print(srednie_pomiarow())
 
+main()
 
 
 # 4. Napisz funkcję maksimum(), która:
 
-# wczytuje liczby całkowite aż do podania wartości 0,
+# wczytuje liczby całkowite dodatnie aż do podania wartości 0,
 # znajduje największą z podanych liczb,
 # zwraca tę liczbę.
 # Napisz funkcję main(), która wyświetla największą wartość.
 
  
+ def maksimum():
+    x = int(input("podaj liczbę: "))
+    max = 0
+    while x != 0:
+        if x > max:
+            max = x
+        x = int(input("podaj liczbę: "))
+    return max
+
+def main():
+    print("funkcja szuka najwiekszej liczby, 0 kończy funkcje")
+    maks = maksimum()
+    print(maks)
+
+main()
+
  
 # 5. Napisz funkcję policz_dodatnie(), która:
 # wczytuje liczby aż do podania wartości 0,
