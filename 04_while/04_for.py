@@ -40,9 +40,24 @@ def policz_znak(tekst, literka):
 # C. dokleja znak do tekstu
 # D. zwraca gotowy, zaszyfrowany tekst
 
+def szyfruj(tekst):
+    szyfrowany = ""
+    for znak in tekst:
+        kod = ord(znak)
+        kod += 4
+        znak2 = chr(kod)
+        szyfrowany += znak2
+    return szyfrowany
+
+
+# -----------
+
 napis = input("podaj tekst: ") 
 pion(napis)
 powtarzaj(napis, 3)
 print(f"\ntekst, {napis} ma {policz_a(napis)} znaków a")
 z = input("Podaj znak : ")
 print(f'Tekst, {napis} ma {policz_znak(napis, z)} znaków jest : {z}')
+print(f"tekst po polsku: {napis}")
+print("tekst po szyfrowaniu ", szyfruj(napis))
+
